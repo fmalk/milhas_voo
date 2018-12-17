@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
-import Left from './Left';
-import Right from './Right';
-import { style } from '../css/App.jsx';
-import '../css/App.css';
+import Left from './components/Left';
+import Right from './components/Right';
+import { style } from './css/App.jsx';
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        <img style={style.image} src={require('./3.jpg')} />
+        <img style={style.image} src={require('./assets/home.jpg')} />
 
         <div style={style.content}>
           <div style={style.left}>
@@ -19,9 +18,6 @@ export default class App extends Component {
             <Right />
           </div>
         </div>
-
-
-
       </div>
 
     )
